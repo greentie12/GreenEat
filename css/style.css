@@ -236,7 +236,6 @@ header {
 /* Welcome */
 #welcome {
   height: 50rem;
-  max-height: 60rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,6 +280,8 @@ header {
 #welcome .rest-img {
   margin: 4rem 2rem;
 }
+
+/* tasteful recipes */
 
 .tasteful-recipes {
   background-color: #040404;
@@ -329,4 +330,145 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin: 4rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .logo h1 {
+    font-size: 5rem;
+    padding: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: color 0.5s;
+  }
+
+  .social {
+    display: none;
+  }
+
+  #hero .container {
+    margin-top: 9rem;
+  }
+
+  .headline {
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .headline-desc {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .click-div {
+    margin-top: 2rem;
+  }
+
+  .date {
+    top: 25rem;
+  }
+
+  .date p {
+    font-size: 1.3rem;
+  }
+
+  #welcome {
+    height: 100%;
+  }
+  .restaurant-content {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-description {
+    margin: 3rem 2rem;
+    margin-bottom: 1.5rem;
+    padding: 3rem;
+  }
+
+  .restaurant-description h5 {
+    margin-bottom: 1rem;
+  }
+
+  .restaurant-description h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .restaurant-description p {
+    margin-bottom: 1rem;
+  }
+
+  #welcome .rest-img {
+    margin: 1.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .tasteful-recipes {
+    position: relative;
+    width: 100%;
+    background: url("../img//salad-plate-rotate.jpg") no-repeat center/cover;
+  }
+
+  .tasteful-recipes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .tasteful-recipes .container {
+    background: none;
+    position: relative;
+  }
+
+  .tasteful-recipes .headline {
+    height: 100%;
+    text-align: center;
+  }
+
+  .sub-headline {
+    font-family: var(--script-font);
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .tasteful-recipes h2 {
+    font-size: 5.5rem;
+  }
+
+  .menu-content {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #menu .restaurant-description {
+    margin-top: 1.5rem;
+  }
 }
