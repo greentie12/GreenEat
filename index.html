@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green</title>
+    <script
+      src="https://kit.fontawesome.com/0004fbb654.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo">
+            <h1>green</h1>
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Reservations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="social">
+            <ul class="social-items">
+              <li>
+                <a href="https://www.yelp.com/" target="_blank"
+                  ><i class="fab fa-yelp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <section id="hero">
+      <div class="container">
+        <h1 class="headline">Green</h1>
+        <h5 class="headline-desc">Redifined Healthy Eating</h5>
+        <div class="click-div">
+          <a href="#welcome" class="click-welcome">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+        <div class="date">
+          <p><i class="far fa-clock"></i> <span id="datetime"></span></p>
+        </div>
+      </div>
+    </section>
+    <!-- hero ends -->
+
+    <section id="welcome">
+      <div class="container">
+        <div class="restaurant-content">
+          <div class="restaurant-description">
+            <h5>A Culinary Philosophy</h5>
+            <div class="restaurant-intro">
+              <h2>Welcome</h2>
+              <p>
+                A place of enjoyment and relaxtion at one of the most enchanting
+                places of Philadelphia, Old City. Enjoy modern clean cuisine at
+                the highest level. The quality lies in the composition of the
+                best products.
+              </p>
+            </div>
+            <p>
+              <a href="#">Reservations</a>
+            </p>
+          </div>
+          <div class="rest-img">
+            <img src="./img/soup-img.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welcome ends -->
+
+    <section class="tasteful-recipes">
+      <div class="container">
+        <div class="headline">
+          <h3 class="sub-headline">tasteful</h3>
+          <h2>Recipes</h2>
+        </div>
+      </div>
+    </section>
+    <!-- tasteful recipes ends -->
+
+    <section id="menu">
+      <div class="container">
+        <div class="menu-content">
+          <div class="menu-img">
+            <img src="./img/tofu-sq.jpg" alt="" />
+            <img src="./img/cocktail-sq.jpg" alt="" />
+            <img src="./img/smoothie-sq.jpg" alt="" />
+            <img src="./img/tomato-sq.jpg" alt="" />
+          </div>
+          <div class="restaurant-description">
+            <h5>A Culinary Philosophy</h5>
+            <div class="restaurant-intro">
+              <h2>Welcome</h2>
+              <p>
+                A place of enjoyment and relaxtion at one of the most enchanting
+                places of Philadelphia, Old City. Enjoy modern clean cuisine at
+                the highest level. The quality lies in the composition of the
+                best products.
+              </p>
+            </div>
+            <p>
+              <a href="#">Reservations</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toDateString();
+    </script>
+  </body>
+</html>
