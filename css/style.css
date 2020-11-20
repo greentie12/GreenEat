@@ -333,6 +333,11 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 0 1rem;
+  }
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -351,6 +356,10 @@ header {
     gap: 2rem;
   }
 
+  /* .nav-item {
+    padding-bottom: 1rem;
+  } */
+
   .nav-link {
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -362,7 +371,8 @@ header {
   }
 
   #hero .container {
-    margin-top: 9rem;
+    margin: 2rem;
+    padding: 0;
   }
 
   .headline {
