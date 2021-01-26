@@ -412,14 +412,6 @@ footer a:hover {
   padding-right: 1rem;
 }
 
-.footer-bottom-links ul li {
-  border-right: 1px solid var(--link-color);
-}
-
-.footer-bottom-links ul li:last-child {
-  border-right: none;
-}
-
 footer .social a {
   padding-right: 2rem;
 }
